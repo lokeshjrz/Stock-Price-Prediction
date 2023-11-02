@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div style="background-color: #F7EFE5;height:43rem;display:flex;justify-content: center;align-items: center;">
+
+    <div>
+        <div>
+            {% if prediction: %}
+            <h1 style="color:#7743DB;text-align: center;">Your Stock Price is {{ prediction }}</h1>
+                
+            {% endif %}
+        </div>
+    </div>
+        
+</div>
+{% endblock %}
